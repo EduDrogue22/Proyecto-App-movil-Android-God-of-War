@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_configuracion"
+        android:icon="@drawable/ic_settings"
+        android:title="Configuración"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_lista_armas"
+        android:title="Armas y magias" />
+    <item
+        android:id="@+id/item_lista"
+        android:title="Info. Person." />
+    <item
+        android:id="@+id/item_logout"
+        android:title="Salir" />
+</menu>

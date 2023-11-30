@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonajesFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_5" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a8000000"
+    android:gravity="center">
+
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:fontFamily="@font/god"
+        android:hint="Nombre del personaje"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/redondeado"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/txtNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/redondeado"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Nivel del personaje"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:fontFamily="@font/god"
+        />
+
+    <EditText
+        android:id="@+id/txtPoder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:hint="Poder del personaje"
+        android:textColor="@color/white"
+        android:fontFamily="@font/god"
+        android:textColorHint="@color/white"
+        android:background="@drawable/redondeado"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DC8301"
+        android:fontFamily="@font/god"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/god"
+        android:text="Eliminar"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:fontFamily="@font/god"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6DC6D6"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Buscar" />
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

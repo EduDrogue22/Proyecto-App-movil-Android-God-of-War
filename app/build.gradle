@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.godofwarapp"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildToolsVersion '33.0.0'
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.preference:preference:1.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //Externos
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:31.0.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.1'
+    implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
+    implementation 'androidx.fragment:fragment-ktx:1.5.4'
+    implementation 'com.google.android.material:material:1.7.0'
+
+    //PICASSO: NOS PERMITE TRANSFORMAR LA URL EN IMG.
+    implementation "com.squareup.picasso:picasso:2.71828"
+    //RETROFIT2: NOS PERMITE CONSUMIR API
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    //GSON: NOS PERMITE CONVERTIR EL JSON
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    //CORRUTINES: NOS PERMITE HACER PETICIONES EN SEGUNDO PLANO
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+
+    //Implemetar autenticación
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+    //AdMob
+    implementation 'com.google.android.gms:play-services-ads:21.3.0'
+
+}
